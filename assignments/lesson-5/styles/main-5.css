@@ -49,7 +49,8 @@ main {
 	display: flex;
 }
 main h2 {
-
+    text-align: center;
+    font-color: #874C62;
 }
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { }
