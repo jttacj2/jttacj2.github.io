@@ -14,7 +14,7 @@ header {
 	align-items: center;
 }
 header h1 {
-
+	font-family: Bodoni 72 Oldstyle, serif;
 }
 header img {
 	width: 5%;
@@ -23,7 +23,9 @@ header img {
 header .subheading {}
 
 nav {
-	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 	background-color: #A7D2CB;
 }
 nav button {}
@@ -31,13 +33,11 @@ nav ul {
 	list-style-type: none;
 }
 nav ul li {
-	
 	margin: 2px;
 	text-align: center;
-	
 }
 nav ul li a {
-	flex-direction: row;
+	
 	text-decoration: none
 }
 nav ul li.active a {}
