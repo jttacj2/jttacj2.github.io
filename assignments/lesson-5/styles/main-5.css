@@ -23,16 +23,16 @@ header img {
 header .subheading {}
 
 nav {
-	display: -webkit-flex;
 	
-	
-	background-color: #A7D2CB;
 }
 nav button {}
 nav ul {
+	display: -webkit-flex;
+	background-color: #A7D2CB;
 	list-style-type: none;
 }
 nav ul li {
+	
 	flex-flow: row wrap;
 	
 	
