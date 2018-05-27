@@ -1,75 +1,35 @@
-* { box-sizing: border-box;}  
-
 body {
   font-size: 16px;
-  font-family: Neue Haas Grotesk Text Pro, sans-serif;  
+  font-family: Neue Haas Grotesk Text Pro, sans-serif;
 }
 
 header, nav, main, footer { 
-  max-width: 100%;
+  max-width: 100%; 
 }
-
-header {}
+h1, h2, h3 {
+	font-family: Bodoni 72 Oldstyle, serif;
+}
+header {
+	display: flex;
+}
 header h1 {}
-header img {}
+header img {
+	float: left;
+	padding: 5px;
+}
 header .subheading {}
 
-nav {
-	display: flex;
-	background-color: #a7d2cb;
-}
+nav {}
 nav button {}
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	 
-}
-nav ul li {
-	float: left;
-}
-nav ul li a {
-	display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-   
-}
-nav ul li:last-child {
-    border-right: none;
-}
-nav ul li.active a {
-	background-color: #F2D388;
-}
-nav ul li a:hover {
-	background-color: #C98474;
-}
+nav ul {}
+nav ul li {}
+nav ul li a {}
+nav ul li.active a {}
+nav ul li a:hover {}
 
-main {
-	
-}
-main h2 {
-	display: flex;
-    font-family: Bodoni 72 Oldstyle, serif;
-    justify-content: center;
-    font-color: #874C62;
-}
-main figure {
-	margin: 0 0 .2rem 2%; width:96%; }
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { }
-.weather-summary {
-	display: flex;
-	flex-direction: row;
-}
-.current {
-	align-items: flex-start;
-}
-.highlow {
-	display: flex;
-	flex-direction: column;
-	align-content: center
-}
-
-
 
 footer {}
