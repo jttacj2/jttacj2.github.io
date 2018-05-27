@@ -27,7 +27,13 @@ nav {
 	flex-direction: row;
 }
 nav button {}
-nav ul {}
+nav ul {
+	width: 300px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
 nav ul li {}
 nav ul li a {}
 nav ul li.active a {}
