@@ -64,4 +64,14 @@ main figure img { }
 .current {
 	align-items: flex-start;
 }
+h3 {
+
+}
+.highlow {
+	flex-direction: column;
+	align-content: center
+}
+
+
+
 footer {}
