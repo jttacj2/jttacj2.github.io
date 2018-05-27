@@ -27,7 +27,7 @@ nav button {}
 nav ul {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: center space-around;
 	height: 50px;
 	background-color: #A7D2CB;
 	list-style-type: none;
