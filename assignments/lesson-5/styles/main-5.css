@@ -6,7 +6,7 @@ body {
 }
 
 header, nav, main, footer { 
-  max-width: 150px;
+  max-width: 100%;
 }
 
 header {}
@@ -16,13 +16,14 @@ header .subheading {}
 
 nav {
 	display: flex;
+	background-color: #a7d2cb;
 }
 nav button {}
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	
+	 
 }
 nav ul li {
 	float: left;
@@ -33,7 +34,7 @@ nav ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #a7d2cb;
+   
 }
 nav ul li:last-child {
     border-right: none;
