@@ -6,7 +6,7 @@ body {
 }
 
 header, nav, main, footer { 
-
+  max-width: 100%;
 }
 
 header {}
