@@ -24,8 +24,8 @@ header .subheading {}
 
 nav {
 	display: -webkit-flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+	
+	
 	background-color: #A7D2CB;
 }
 nav button {}
@@ -33,11 +33,12 @@ nav ul {
 	list-style-type: none;
 }
 nav ul li {
-	margin: 2px;
-	text-align: center;
+	flex-flow: row wrap;
+	
+	
 }
 nav ul li a {
-	
+	justify-content: space-around;
 	text-decoration: none
 }
 nav ul li.active a {}
