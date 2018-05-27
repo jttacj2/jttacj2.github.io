@@ -47,9 +47,10 @@ nav ul li a:hover {
 }
 
 main {
-	display: flex;
+	
 }
 main h2 {
+	display: flex;
     justify-content: center;
     font-color: #874C62;
 }
