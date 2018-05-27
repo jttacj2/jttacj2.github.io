@@ -27,11 +27,11 @@ nav ul li {
 }
 nav ul li a {
 	display: block;
-    font-color: white;
+    font-color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #dedbd6;
+    background-color: #a7d2cb;
 }
 nav ul li:last-child {
     border-right: none;
@@ -43,8 +43,12 @@ nav ul li a:hover {
 	background-color: #C98474;
 }
 
-main {}
-main h2 {}
+main {
+	display: flex;
+}
+main h2 {
+
+}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { }
 
