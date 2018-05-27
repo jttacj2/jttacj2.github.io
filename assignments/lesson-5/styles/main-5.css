@@ -61,6 +61,6 @@ main figure img { }
 	display: flex;
 }
 .current {
-	justify-content: flex-start;
+	align-items: flex-start;
 }
 footer {}
