@@ -12,10 +12,11 @@ h1, h2, h3 {
 header {
 	display: flex;
 	align-items: center;
-	margin: 15px 5px 15px;
+	margin: 30px 5px 30px;
 }
 header h1 {
 	font-family: Bodoni 72 Oldstyle, serif;
+	font-size: 4em;
 }
 header img {
 	width: 5%;
