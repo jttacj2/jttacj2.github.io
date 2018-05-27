@@ -55,9 +55,12 @@ main h2 {
     font-color: #874C62;
 }
 main figure {
-	display: flex;
-	justify-content: flex-start;  
 	margin: 0 0 .2rem 2%; width:96%; }
 main figure img { }
-
+.weather-summary {
+	display: flex;
+}
+.current {
+	justify-content: flex-start;
+}
 footer {}
