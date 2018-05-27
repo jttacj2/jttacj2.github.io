@@ -14,7 +14,9 @@ header h1 {}
 header img {}
 header .subheading {}
 
-nav {}
+nav {
+	display: flex;
+}
 nav button {}
 nav ul {
 	list-style-type: none;
