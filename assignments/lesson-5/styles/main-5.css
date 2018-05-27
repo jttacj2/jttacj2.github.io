@@ -65,6 +65,7 @@ main figure img { }
 	align-items: flex-start;
 }
 .highlow {
+	display: flex;
 	flex-direction: column;
 	align-content: center
 }
