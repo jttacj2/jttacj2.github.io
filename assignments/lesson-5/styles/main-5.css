@@ -22,7 +22,10 @@ header img {
 }
 header .subheading {}
 
-nav {}
+nav {
+	display: flex;
+	flex-direction: row;
+}
 nav button {}
 nav ul {}
 nav ul li {}
