@@ -22,18 +22,17 @@ header img {
 }
 header .subheading {}
 
-nav {
-	
-}
+nav {}
 nav button {}
 nav ul {
-	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
 	background-color: #A7D2CB;
 	list-style-type: none;
 }
 nav ul li {
 	
-	flex-flow: row wrap;
+	
 	
 	
 }
