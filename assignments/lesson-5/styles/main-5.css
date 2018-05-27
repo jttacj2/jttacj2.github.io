@@ -28,6 +28,7 @@ nav ul {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+	height: 10px;
 	background-color: #A7D2CB;
 	list-style-type: none;
 }
