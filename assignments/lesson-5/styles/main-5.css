@@ -25,12 +25,13 @@ header .subheading {}
 nav {
 	display: flex;
 	flex-direction: row;
+	background-color: #A7D2CB;
 }
 nav button {}
 nav ul {
-	width: 300px;
 	margin: 10px;
 	text-align: center;
+	text-decoration: none
 }
 nav ul li {}
 nav ul li a {}
