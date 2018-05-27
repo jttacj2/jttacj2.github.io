@@ -59,13 +59,10 @@ main figure {
 main figure img { }
 .weather-summary {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 .current {
 	align-items: flex-start;
-}
-h3 {
-
 }
 .highlow {
 	flex-direction: column;
