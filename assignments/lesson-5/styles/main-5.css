@@ -48,9 +48,15 @@ nav ul li a {
 nav ul li.active a {}
 nav ul li a:hover {}
 
-main {}
+main {
+	margin: 5px 30px 5px;
+}
 main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
+main figure {}
+main figure img {
+	float: left;
+	margin: 0 0 .2rem 2%; 
+	width:96%;
+}
 
 footer {}
