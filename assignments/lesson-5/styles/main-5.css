@@ -33,7 +33,7 @@ nav {}
 nav button {}
 nav ul {
 	display: flex;
-	flex-flow: row;
+	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	height: 50px;
@@ -41,7 +41,7 @@ nav ul {
 	list-style-type: none;
 }
 nav ul li {
-
+border-right: 1px solid #bbb;
 }
 nav ul li a {
 	
@@ -67,4 +67,10 @@ main article img {
 	width: 10%;
 }
 
-footer {}
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #A7D2CB
+}
