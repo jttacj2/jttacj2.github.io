@@ -11,24 +11,22 @@ header, nav, main, footer {
   max-width: 100%; 
 }
 h1, h2, h3 {
-	font-family: Bodoni 72 Oldstyle, serif;
+	font-family: Bodoni, serif;
 }
 header {
-	display: flex;
-	
 	margin: 0px 100px 0px;
 }
 header h1 {
-	font-family: Bodoni 72 Oldstyle, serif;
-	font-size: 4em;
-	
+		font-size: 4em;
 }
 header img {
-	width: 8%;
-	padding: 5px;
+	float: left;
+	width: 4%;
+	margin-right: 2em;
+	
 }
 header .subheading {
-
+	margin: -2.5em 7em 0em;
 }
 
 nav {}
@@ -57,10 +55,16 @@ margin: 0px 100px 0px;
 }
 main h2 {}
 main figure {}
-main figure img {
+main picture img {
 	float: left;
-	margin: 0 0 .2rem 2%; 
-	width:96%;
+	margin-right: 2em; 
+	width: 25%;
+}
+
+main article img {
+	float: left;
+	margin-right: 2em; 
+	width: 10%;
 }
 
 footer {}
