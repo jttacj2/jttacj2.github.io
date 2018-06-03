@@ -68,7 +68,7 @@ main figure {}
 }
 .conditions {
 	order: 3;
-	align-items: flex-end;
+	align-self: flex-end;
 }
 
 main article img {

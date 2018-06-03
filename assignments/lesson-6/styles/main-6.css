@@ -1,0 +1,102 @@
+/*----------- apply a natural box layout model to all elements --------------*/
+* { 
+	box-sizing: border-box;
+
+}
+/*----------- BODY --------------*/
+
+body {
+  font-size: 16px;
+  font-family: Neue Haas Grotesk Text Pro, sans-serif;
+}
+
+
+header, nav, main, footer { 
+  max-width: 100%; 
+}
+h1, h2, h3 {
+	font-family: 'Volkhov', serif;
+}
+
+/*----------- HEADER --------------*/
+header {
+	padding: .5rem 2%;
+}
+header h1 {
+		font-size: 4em;
+}
+
+header .subheading {
+	margin: 0;
+}
+header figure.logo {
+    float: left;
+    margin: 0;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+	background-color: #A7D2CB;
+}
+nav button {}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+	
+	list-style-type: none;
+
+}
+nav ul li {
+	border-right: 1px solid #f3f3f3;
+}
+nav ul li a {
+	justify-content: space-around;
+	text-decoration: none
+}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+/*----------- MAIN --------------*/
+main {
+margin: 0px 100px 0px;
+}
+
+main h2 {}
+main figure {}
+.weather-summary {
+	display: flex;
+}
+.current {
+	order: 1;
+}
+.highlow{
+	order: 2;
+}
+.conditions {
+	order: 3;
+	align-items: flex-end;
+}
+
+main article img {
+	float: left;
+	margin-right: 2em; 
+	width: 10%;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #A7D2CB
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
