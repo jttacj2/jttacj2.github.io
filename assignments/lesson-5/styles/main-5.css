@@ -39,9 +39,10 @@ nav ul {
 	height: 50px;
 	background-color: #A7D2CB;
 	list-style-type: none;
+
 }
 nav ul li {
-border-right: 1px solid #bbb;
+	border-right: 1px solid #f3f3f3;
 }
 nav ul li a {
 	
@@ -53,12 +54,21 @@ nav ul li a:hover {}
 main {
 margin: 0px 100px 0px;
 }
+
 main h2 {}
 main figure {}
-main picture img {
-	float: left;
-	margin-right: 2em; 
-	width: 25%;
+.weather-summary {
+	display: flex;
+}
+.current {
+	order: 1;
+}
+.highlow{
+	order: 2;
+}
+.conditions {
+	order: 3;
+	align-items: flex-end;
 }
 
 main article img {
