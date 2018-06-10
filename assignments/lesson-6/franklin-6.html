@@ -17,26 +17,29 @@
   <header class="clearfix">
    <figure class="logo">
    <img src="images/logo.png" srcset="images/logo1.png 1x, images/logo2.png 2x,images/logo3.png 3x">
-    <h1>Weather Date</h1>
    </figure>
-   
+    <h1>Weather Date</h1>   
     <h3 class="subheading">Weather for any date</h3>
+    <button class="ham">&#9776;</button>
   </header>
-
   <nav>
-    <ul>
+    <ul class="navigation responsive" id="topnav">
     	<li><a href="#">Home</a></li>
     	<li><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
     	<li><a href="#">Storm Center</a></li>
     	<li><a href="#">Gallery</a></li>
+      
     </ul>		
   </nav>
     
   <main>
-     <figure>
-      <img src="images/franklin-original.jpg" srcset="images/franklin-s.jpg 1x, images/franklin-m.jpg 2x, images/franklin-l.jpg 3x">
+     <figure class="fimg">
+      <img src="images/franklin-original.jpg" alt="Green grass, trees, mountains in the background, blue sky with sun shining" sizes="100vw" 
+      srcset="images/franklin-small.jpg 350w, 
+      images/franklin-medium.jpg 800w, 
+      images/franklin-large.jpg 1100w">
     </figure>
     <h2>Franklin</h2>
    
@@ -52,7 +55,7 @@
       <div class="current">
         <p>Sunny</p>
         <picture>
-            <img src="images/main.jpg" alt="Landscape with blueskies speckled with clowds">
+           
         </picture>
       </div>   
      
@@ -100,7 +103,11 @@
       
     <article>
       <h3>Franklin Breaks Record</h3>
-      <img src="images/hot.jpg" alt="thermomiter showing the temperature">
+      <figure>
+      <img src="images/hot.jpg" alt="thermomiter showing the temperature" sizes="25vw" srcset="images/hot-small.jpg 350w, 
+      images/hot-medium.jpg 800w,
+      images/hot-large.jpg 1100w,">
+      </figure>
       <p class="town-article">
       </p>
     </article>		  
@@ -119,9 +126,10 @@
       123 Main St. Anytown, US 99999
       Google Map
     </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"><p id="js"></p></span>
     </section>
   </footer>
-
+  <script src="scripts/currentdate.js"></script> 
+ 
 </body>
 </html>

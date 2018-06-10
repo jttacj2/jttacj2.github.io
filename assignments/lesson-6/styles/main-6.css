@@ -39,7 +39,15 @@ header figure.logo {
 
     margin: 0;
 }
-
+.ham { 
+    content: "";
+    position: absolute;
+    right: 2rem; top: 1.8rem;
+    display: block;
+    width: 2rem; height: 0;
+    -webkit-box-shadow: 1px 10px 1px 1px #eee,1px 16px 1px 1px #eee,1px 22px 1px 1px #eee;
+    box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
+}
 /*----------- NAVIGATION --------------*/
 nav {
 	background-color: #A7D2CB;
@@ -73,13 +81,32 @@ nav ul li:last-child {
 nav ul li.active a {}
 nav ul li a:hover {}
 
+ @media screen and (max-width: 600px) {
+  .navigation a:{display: none;}
+  .navigation a.ham {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation.responsive {position: relative;}
+  .navigation.responsive .ham {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
 /*----------- MAIN --------------*/
 main {
 margin: 0px 100px 0px;
 }
 
 main h2 {}
-main figure {}
+main figure.fimg {
+	margin: 0;
+}
+
 .weather-summary {
 	display: flex;
 }
@@ -94,10 +121,10 @@ main figure {}
 	align-items: flex-end;
 }
 
-main article img {
+main article figure img {
 	float: left;
 	margin-right: 2em; 
-	width: 10%;
+	
 }
 
 /*----------- FOOTER --------------*/
