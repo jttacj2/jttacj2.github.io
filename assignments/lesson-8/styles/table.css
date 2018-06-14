@@ -52,5 +52,9 @@ tfoot tr td {
 	font-size: 12px; 
 }
 
+table tbody tr:nth-child(6) td:first-child{
+	font-style: italic;
+}
+
 
 
