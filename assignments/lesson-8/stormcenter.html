@@ -36,8 +36,44 @@
 
   <main>
     <form method="get" action="thanks.html">
+      <fieldset class="personal">
+      <legend>Your Information</legend>
+      <label>Full Name*<input type="text" name="full_name" pattern="[a-z] {5}"></label>
+      <label>Email<input type="email" name="email" placeholder="somebody@gmail.com"></label>
+      <label>Phone Number<input type="tel" name="phone_number" required></label>
+      <label>Zip Code<input type="number" name="zip_code" required></label>
+      </fieldset>
       
-
+      <fieldset class="storm">
+        <legend>Storm Information</legend>
+      <label>Storm Date<input type="date" name="date"></label>
+      <label>Storm Type<input list="storm_type">
+        <datalist id="storm_type">
+          <option value="Flash Flood">
+          <option value="Hail">
+          <option value="Hurricane">
+          <option value="Thunderstorm">
+          <option value="Tornado">
+        </datalist></label>
+        <label>Storm Severity<input type="range" name="storm_severity" value="1" min="1" max="10"></label>        
+      <select>
+        <option value="">Select Region</option>
+        <option value="Franklin">Franklin</option>
+        <option value="Greenville">Greenville</option>
+        <option value="Springfield">Springfield</option>
+      </select>
+      </fieldset>
+      
+      <fieldset class="danger">
+          <legend>Your Situation</legend>
+      <div>Are You in Danger</div>
+      <label><input type="radio" name="danger" value="yes">Yes</label>
+      <label><input type="radio" name="danger" value="maybe">Maybe</label>
+      <label><input type="radio" name="danger" value="no">No</label>
+      <div>Additional Information or Comments</div>
+      <textarea rows="6" cols="50"></textarea>
+      </fieldset>
+      <input type="submit" value="Report Your Weather">
     </form>
 
 

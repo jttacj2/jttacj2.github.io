@@ -101,33 +101,19 @@ nav ul li a:hover {}
 
 /*----------- MAIN --------------*/
 main {
-margin: 0px 100px 0px;
+	margin: 0px 100px 0px;
 }
-
-main h2 {}
-main figure.fimg {
-	margin: 0;
-}
-
-.weather-summary {
+main form {
 	display: flex;
 }
-.current {
-	order: 1;
-}
-.highlow{
-	order: 2;
-}
-.conditions {
-	order: 3;
-	align-items: flex-end;
-}
+ .personal, .storm, .danger {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	align-items: center;
+ }
 
-main article figure img {
-	float: left;
-	margin-right: 2em; 
-	
-}
+
+
 
 /*----------- FOOTER --------------*/
 footer {
