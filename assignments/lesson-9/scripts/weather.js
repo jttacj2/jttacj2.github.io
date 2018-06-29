@@ -1,7 +1,7 @@
 
 
 
-var requestURL = 'http://api.openweathermap.org/data/2.5/weather?zip=55333,us&appid=88a924d1a4a43bc7077409e502004d08';
+var requestURL = 'https://api.openweathermap.org/data/2.5/weather?zip=55333,us&appid=88a924d1a4a43bc7077409e502004d08';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -17,7 +17,7 @@ var requestURL = 'http://api.openweathermap.org/data/2.5/weather?zip=55333,us&ap
     var windS = request.response.wind.speed; 
     var currentDiscrp = request.response.weather[0].description;             
     var icon = request.response.weather[0].icon;
-    
+
     // debugger;
   document.getElementById('ct').innerHTML = "Current Temperature:" + " " + cT + "&#8457;";  
   document.getElementById('ht').innerHTML = "High Temperature:" + " " + hT + "&#8457;";
