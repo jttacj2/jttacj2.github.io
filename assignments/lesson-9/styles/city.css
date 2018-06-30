@@ -33,7 +33,7 @@ header h1 {
 
 header .subheading {
 	align-self: flex-end;
-
+	margin-left: -19.5em;
 }
 header figure.logo {
    
@@ -90,41 +90,52 @@ main {
 margin: 0px 100px 0px;
 }
 
-
 main h2 {
-	font-size: 2em;
+	font-size: 3em;
 }
 
-main div.ms {
+main h3 {
+	font-size: 1.5em;
+}
+main figure.fimg {
+	margin-left: -6.7em;
+}
+
+.weather-summary {
+	background-color: #C98474;
 	display: flex;
-	flex-flow:row wrap;
-	justify-content:space-evenly;
-	padding: 4.5em 0 3em;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 50%;
 }
 
-main div section.fk {
-	background-color: #F2D388;
-	padding: 3em;
+.wsum {
+	order: 1;
+	
 }
-main div section.gv {
-	background-color: #F2D388;
-	padding: 3em;
+.current {
+	order: 2;
 }
-main div section.sf {
-	background-color: #F2D388;
-	padding: 3em;
+.highlow{
+	order: 4;
+}
+.conditions {
+	order: 3;
+	
+}
+
+main article figure img {
+	float: left;
+	margin-right: 2em; 
+	
 }
 
 /*----------- FOOTER --------------*/
 footer {
-	text-align: center;
-	padding-bottom: 2em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	background-color: #A7D2CB
-
 }
-
 
