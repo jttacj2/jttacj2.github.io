@@ -18,10 +18,10 @@ var requestURL = 'https://api.openweathermap.org/data/2.5/weather?zip=38701,us&a
     var icon = weatherGRequest.response.weather[0].icon;
 
     // debugger;
-  document.getElementById('curt').innerHTML = "Current Temperature:" + " " + cT + "&#8457;";  
-  document.getElementById('heigh').innerHTML = "High Temperature:" + " " + hT + "&#8457;";
-  document.getElementById('low').innerHTML = "Low Temperature:" + " " + lT + "&#8457;";
-  document.getElementById('winds').innerHTML = "Wind Speed:" + " " + windS + " " + "mph";
-  document.getElementById('curend').innerHTML = "Current Weather Description:" + " " + currentDiscrp;
-  document.getElementById('ico').innerHTML = icon;
+  document.getElementById('ctem').innerHTML = "Current Temperature:" + " " + cT + "&#8457;";  
+  document.getElementById('htem').innerHTML = "High Temperature:" + " " + hT + "&#8457;";
+  document.getElementById('ltem').innerHTML = "Low Temperature:" + " " + lT + "&#8457;";
+  document.getElementById('wspeed').innerHTML = "Wind Speed:" + " " + windS + " " + "mph";
+  document.getElementById('cde').innerHTML = "Current Weather Description:" + " " + currentDiscrp;
+  document.getElementById('icons').innerHTML = icon;
   }

@@ -148,8 +148,7 @@ main article figure img {
 }
 
 .forecast {
-	border: solid #C98474;
-	padding: 2em;
+	
 
 }
 
@@ -167,8 +166,9 @@ main article.brecord {
 footer {
 	text-align: center;
 	padding-bottom: 2em;
+	width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	background-color: #A7D2CB
