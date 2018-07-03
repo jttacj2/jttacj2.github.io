@@ -93,7 +93,7 @@ margin: 0px 100px 0px;
 
 
 main h2 {
-	font-size: 2em;
+	font-size: 3em;
 }
 
 main div.ms {
@@ -110,6 +110,57 @@ main div section {
 	box-shadow: 5px 10px 19px #bcbcbc;
 }
 
+
+main h3 {
+	font-size: 1.5em;
+}
+main figure.fimg {
+	margin-left: -6.7em;
+}
+
+.weather-summary {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 2em;
+	margin-top: 1em;
+}
+
+.wsum {
+	order: 1;
+	
+}
+.current {
+	order: 2;
+}
+.highlow{
+	order: 4;
+}
+.conditions {
+	order: 3;
+	
+}
+
+main article figure img {
+	float: left;
+	margin-right: 2em; 
+	
+}
+
+.forecast {
+	background-color: #C98474;
+	padding: 2em;
+
+}
+
+main article.brecord {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	padding-left: 2em;
+
+}
 
 /*----------- FOOTER --------------*/
 footer {

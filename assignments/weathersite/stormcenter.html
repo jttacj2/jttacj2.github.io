@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Date Ideas Weather</title>
+  <meta name="description" content="CIT 230: lesson 5 assignment">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main-8.css"> 
+  <link rel="stylesheet" href="styles/medium-8.css"> 
+  <link rel="stylesheet" href="styles/large-8.css"> 
+
+</head>
+<body>
+
+  <header>
+   <figure class="logo">
+   <img src="images/logo.png" srcset="images/logo1.png 1x, images/logo2.png 2x,images/logo3.png 3x" alt="logo">
+   </figure>
+    <h1>Weather Date</h1>   
+    <h3 class="subheading">Weather for any date</h3>
+    <button class="ham">&#9776;</button>
+  </header>
+  <nav>
+    <ul class="navigation responsive" id="topnav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Franklin</a></li>
+      <li><a href="#">Greenville</a></li>
+      <li><a href="#">Springfield</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+      
+    </ul>   
+  </nav>
+
+  <main>
+    <form method="get" action="thanks.html">
+      <fieldset class="personal">
+      <legend>Your Information</legend>
+      <label>Full Name*<input type="text" name="full_name" pattern="[a-z] {5}"></label>
+      <label>Email<input type="email" name="email" placeholder="somebody@gmail.com"></label>
+      <label>Phone Number<input type="tel" name="phone_number" required></label>
+      <label>Zip Code<input type="number" name="zip_code" required></label>
+      </fieldset>
+      
+      <fieldset class="storm">
+        <legend>Storm Information</legend>
+      <label>Storm Date<input type="date" name="date"></label>
+      <label>Storm Type<input list="storm_type">
+        <datalist id="storm_type">
+          <option value="Flash Flood">
+          <option value="Hail">
+          <option value="Hurricane">
+          <option value="Thunderstorm">
+          <option value="Tornado">
+        </datalist></label>
+        <label>Storm Severity<input type="range" name="storm_severity" value="1" min="1" max="10"></label>        
+      <select>
+        <option value="">Select Region</option>
+        <option value="Franklin">Franklin</option>
+        <option value="Greenville">Greenville</option>
+        <option value="Springfield">Springfield</option>
+      </select>
+      </fieldset>
+      
+      <fieldset class="danger">
+          <legend>Your Situation</legend>
+      <div>Are You in Danger</div>
+      <label><input type="radio" name="danger" value="yes">Yes</label>
+      <label><input type="radio" name="danger" value="maybe">Maybe</label>
+      <label><input type="radio" name="danger" value="no">No</label>
+      <div>Additional Information or Comments</div>
+      <textarea rows="6" cols="50"></textarea>
+      </fieldset>
+      <input type="submit" value="Report Your Weather">
+    </form>
+
+
+  </main>
+
+</body>
+</html>
