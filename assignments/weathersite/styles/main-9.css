@@ -160,6 +160,12 @@ main article.brecord {
 
 }
 
+main form fieldset{
+display: flex;
+flex-flow: row wrap;
+padding: 3em 3em 3em;
+}
+
 
 
 /*----------- FOOTER --------------*/

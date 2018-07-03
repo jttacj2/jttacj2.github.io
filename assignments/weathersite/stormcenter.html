@@ -38,10 +38,10 @@
     <form method="get" action="thanks.html">
       <fieldset class="personal">
       <legend>Your Information</legend>
-      <label>Full Name*<input type="text" name="full_name" pattern="[a-z] {5}"></label>
-      <label>Email<input type="email" name="email" placeholder="somebody@gmail.com"></label>
-      <label>Phone Number<input type="tel" name="phone_number" required></label>
-      <label>Zip Code<input type="number" name="zip_code" required></label>
+      <label class="top">Full Name*<input type="text" name="full_name" pattern="[a-z] {5}"></label>
+      <label class="top">Email<input type="email" name="email" placeholder="somebody@gmail.com"></label>
+      <label class="top">Phone Number<input type="tel" name="phone_number" required></label>
+      <label class="top">Zip Code<input type="number" name="zip_code" required></label>
       </fieldset>
       
       <fieldset class="storm">
@@ -56,7 +56,7 @@
           <option value="Tornado">
         </datalist></label>
         <label>Storm Severity<input type="range" name="storm_severity" value="1" min="1" max="10"></label>        
-      <select>
+      <select class="danger">
         <option value="">Select Region</option>
         <option value="Franklin">Franklin</option>
         <option value="Greenville">Greenville</option>
@@ -66,18 +66,31 @@
       
       <fieldset class="danger">
           <legend>Your Situation</legend>
-      <div>Are You in Danger</div>
+      <div class="danger">Are You in Danger</div>
       <label><input type="radio" name="danger" value="yes">Yes</label>
       <label><input type="radio" name="danger" value="maybe">Maybe</label>
       <label><input type="radio" name="danger" value="no">No</label>
-      <div>Additional Information or Comments</div>
-      <textarea rows="6" cols="50"></textarea>
+      <div class="danger">Additional Information or Comments</div>
+      <textarea class="danger" rows="6" cols="50"></textarea>
       </fieldset>
       <input type="submit" value="Report Your Weather">
     </form>
 
 
   </main>
+  <footer>
+    <section class="contact">
+      <p class="location">Weather Date <br>
+      999.999.9999 <br>
+      123 Main St.<br>
+      Anytown, US 99999<br>
+      Google Map<br></p>
+    </section><br>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Date | OpenWeatherMap.org | <span id="js"></span>
+    </section>
+  </footer>
+  <script src="scripts/currentdate.js"></script> 
 
 </body>
+
 </html>

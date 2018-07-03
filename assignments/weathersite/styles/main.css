@@ -36,10 +36,7 @@ header .subheading {
 	margin-left: -19.5em;
 }
 header figure.logo {
-   
-	align-self: center;
-
-   
+ 	align-self: center;
 }
 
 /*----------- NAVIGATION --------------*/
@@ -163,6 +160,30 @@ main article.brecord {
 
 main table {
 	border: solid #C98474; 
+}
+
+main form fieldset legend  {
+	font-size: 2em;
+}
+main form fieldset {
+	display: flex;
+	border: solid .5em #F2D388;
+	padding: 3em 0 3em;
+	margin: 7em;
+	width: 60%;
+}
+main form fieldset label {
+margin-left: 2em;
+}
+
+main form input {
+	padding: 2em;
+	margin: 0 0 6em 5em;
+	background-color: #C98474;
+	color: #fff;
+}
+.danger {
+	margin-left: 2em;
 }
 
 /*----------- FOOTER --------------*/
