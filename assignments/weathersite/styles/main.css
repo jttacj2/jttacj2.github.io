@@ -74,7 +74,7 @@ nav ul li a {
 }
 
 nav ul li.active a {
-	color: #F2D388;
+	color: #fff;
 }
 nav ul li a:hover {
 	background-color: #C98474;
@@ -99,7 +99,7 @@ main h2 {
 main div.ms {
 	display: flex;
 	flex-flow:row wrap;
-	justify-content:space-around;
+	justify-content:space-evenly;
 	padding: 4.5em 0 3em;
 
 }
@@ -148,7 +148,7 @@ main article figure img {
 }
 
 .forecast {
-	border: solid #C98474;
+	background-color: #C98474;
 	padding: 2em;
 
 }
@@ -161,7 +161,9 @@ main article.brecord {
 
 }
 
-
+main table {
+	border: solid #C98474; 
+}
 
 /*----------- FOOTER --------------*/
 footer {
