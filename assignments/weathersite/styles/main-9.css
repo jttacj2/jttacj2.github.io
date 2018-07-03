@@ -124,7 +124,6 @@ main figure.fimg {
 	flex-direction: column;
 	justify-content: space-around;
 	padding-left: 2em;
-	margin-top: 1em;
 }
 
 .wsum {
