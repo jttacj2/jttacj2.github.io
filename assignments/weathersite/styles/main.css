@@ -76,6 +76,7 @@ nav ul li.active a {
 nav ul li a:hover {
 	background-color: #C98474;
 	color: #fff;
+
 }
 nav ul.navigationResponsive{
 display: none;
@@ -116,7 +117,6 @@ main figure.fimg {
 }
 
 .weather-summary {
-	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -167,23 +167,54 @@ main form fieldset legend  {
 }
 main form fieldset {
 	display: flex;
+	flex-direction: column;
+
+}
+main form fieldset{
 	border: solid .5em #F2D388;
 	padding: 3em 0 3em;
 	margin: 7em;
 	width: 60%;
+
+
+}
+input, textarea, select {
+  order: 2;
+  flex: 1 1 auto;
+  margin-left: -5em;
 }
 main form fieldset label {
 margin-left: 2em;
+order: 1;
+width: 10em;
+
 }
 
 main form input {
 	padding: 2em;
 	margin: 0 0 6em 5em;
-	background-color: #C98474;
-	color: #fff;
+	background-color: #cecdcd;
+
 }
 .danger {
 	margin-left: 2em;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto; 
+	font-size: 1em;
+	text-align: center;
+
+}
+.grid-item {
+	border: .5em  solid #F2D388;
+	padding: 1em;
+	margin: 2em;
+	padding: 2em;
+}
+
+.grid-item img:hover {
+	box-shadow: 5px 5px 10px gray;
 }
 
 /*----------- FOOTER --------------*/
