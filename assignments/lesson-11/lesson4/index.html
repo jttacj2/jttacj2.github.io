@@ -4,10 +4,45 @@
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
 	<link rel="stylesheet" href="css/style.css">
+	<!-- <script src="//code.jquery.com/jquery-2.2.1.min.js"></script> -->
 	<script src="js/jquery-2.2.1.min.js"></script>
 	<script>
 	$(function(){
 		// jQuery Code goes here
+		// console.log($('input[type="text"]').css('background-color') );
+		$('#alcoveLogo').css('opacity', 0.4);
+
+		$('.servicesBtn').css('color', '#FFF');
+
+		var toggleStyle = function() {
+			var inputFields = $('input[type="text"]');
+			if( inputFields.css('background-color') === 'rgb(255, 0, 0)') {
+			//set backkrund color to white
+				inputFields.css('background-color', 'rgb(255, 255, 255)');
+			} else {
+				//set background color to red
+				inputFields.css('background-color', 'rgb(255, 0, 0)');
+			}
+		}
+		$('#ReqAQuoteBtn').click( toggleStyle );
+		
+		//add content to list
+		//$('.coreValues').append("<li><strong>This is brand new !!</strong></li>");
+		//$("<li><strong>This is also brand new !!</strong></li>").appendTo(".coreValues")
+		$('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
+		$("<li><strong>This is also brand new !!</strong></li>").prependTo(".coreValues")
+
+		//Fill name place when left empty
+		var nameVal = $('input[name="nameVal"]');
+
+		function FillEmpty() {
+			if( nameVal.val() == ''){
+				nameVal.val( 'John Doe');
+			}
+		}
+
+		$('#ReqAQuoteBtn').click( FillEmpty );
+
 
 	})
 	</script>
@@ -104,6 +139,17 @@
 
 		<div class="footer">
 			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
+			
+		<div class="footerNav">
+			<ul>
+				<li><a href="animated-menu-begin.html">Animated Menu</a></li>
+				<li><a href="drop-down-menu-begin.html">Drop Down Menu</a></li>
+				<li><a href="fruit-basket-begiin.html">Fruit Basket</a></li>
+				<li><a href="insert-html-begin.html">Insert HTML</a></li>
+				<li><a href="toggle-button.html">Toggle Button</a></li>
+			</ul>
+		</div>
+
 		</div>
 	</div>
 </body>
