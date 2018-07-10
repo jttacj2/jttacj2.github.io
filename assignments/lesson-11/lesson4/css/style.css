@@ -282,6 +282,7 @@ body {
 	position: absolute;
 	top: 8px;
 	right:7px;
+
 }
 
 .footerNav li {
@@ -290,6 +291,8 @@ body {
 	padding:6px;
 	font-size:15px;
 	float:left;
+	list-style:none;
+	font-size: 12px;
 }
 
 .footerNav a {
