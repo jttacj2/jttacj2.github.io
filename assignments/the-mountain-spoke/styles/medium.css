@@ -1,0 +1,14 @@
+@media only screen and (min-width: 37.5em) {
+	nav ul {
+		height: 2.25em;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	main {
+		flex: 1 auto;
+	}
+
+
+}

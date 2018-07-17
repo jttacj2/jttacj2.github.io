@@ -1,0 +1,78 @@
+/*----------- applied to multiple areas --------------*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: Muli, sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: Vollkorn, serif;
+	color: #D4453B;
+}
+
+header, nav, footer { 
+  max-width: 100%; 
+}
+
+main {
+	max-width: 75%;
+}
+
+/*----------- HEADER --------------*/
+header {
+	display: flex;
+	align-items: center;	
+}
+
+h1 {
+	font-size: 3em;	
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+	background-color: #5E9683;
+	border-bottom: .25em solid #D4453B;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	list-style-type: none;
+	padding-top: 1em;
+}
+
+nav ul li {
+	color: #fff;
+}
+
+nav ul li.active a {
+	color: #D4453B;
+}
+
+nav ul li a:hover {
+	background-color: #FCEBE2;
+	color: #5E9683;
+}
+
+/*----------- MAIN --------------*/
+main {
+	display: flex;	
+	flex-flow: row wrap;
+}
+
+main > * { 
+	flex: 1 100%;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
