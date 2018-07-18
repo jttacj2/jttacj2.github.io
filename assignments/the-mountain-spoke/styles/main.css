@@ -8,9 +8,21 @@ body {
 	font-family: Muli, sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2 {
 	font-family: Vollkorn, serif;
 	color: #D4453B;
+}
+
+h1 {
+	font-size: 3em;	
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h3 {
+	color: #5E9683;
 }
 
 header, nav, footer { 
@@ -25,10 +37,6 @@ main {
 header {
 	display: flex;
 	align-items: center;	
-}
-
-h1 {
-	font-size: 3em;	
 }
 
 /*----------- NAVIGATION --------------*/
@@ -49,6 +57,10 @@ nav ul li {
 	color: #fff;
 }
 
+nav ul li a {
+	text-decoration: none;
+}
+
 nav ul li.active a {
 	color: #D4453B;
 }
@@ -59,20 +71,70 @@ nav ul li a:hover {
 }
 
 /*----------- MAIN --------------*/
-main {
-	display: flex;	
-	flex-flow: row wrap;
-}
+
 
 main > * { 
-	flex: 1 100%;
 	margin: 0;
 }
 
+/*----------- MAIN/ABOUT --------------*/
+.about {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-left: 3em;
+	padding: 2em 0 2em;
+}
 
+.about-h {
+	flex: 100%;
+}
+.about-p {
+	flex: 30%;
+	padding-right: 3em;
+}
 
+/*----------- MAIN/BUTTON --------------*/
+.button {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-left: 3em;
+	padding: 2em 0 2em;
+	background-color: #E3E9EF;
+}
 
+.button button:hover {
+	box-shadow: 5px 5px 10px gray;
+}
 
+/*----------- MAIN/TOURS --------------*/
+.tours {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	margin-left: 3em;
+	padding-top: 3em;
 
+}
+
+.tours-h {
+	flex: 100%;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	background-color: #5E9683;
+	border-top: .25em solid #D4453B;
+	padding-bottom: 2em;
+	font-size: 10px;
+}
+
+footer h5 {
+	font-size: 13em;
+}
 
 

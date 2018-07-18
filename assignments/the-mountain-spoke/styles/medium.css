@@ -10,5 +10,8 @@
 		flex: 1 auto;
 	}
 
-
+	.tours div {
+		flex: 30%;
+		padding-right: 3em;
+	}
 }
