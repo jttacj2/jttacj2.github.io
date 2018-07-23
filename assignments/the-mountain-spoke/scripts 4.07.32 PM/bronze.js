@@ -1,6 +1,6 @@
-var request = 'application/json';
-    var bronzeRequest = new XMLHttpRequest();
-    bronzeRequest.open('GET', requestURL);
+var request = fetch('scripts/json');
+    var bronzeRequest = new fetchRequest();
+    bronzeRequest.open('GET', request);
     bronzeRequest.responseType = 'json';
     bronzeRequest.send();
 
