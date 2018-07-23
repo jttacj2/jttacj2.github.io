@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="styles/medium.css"> 
   <link rel="stylesheet" href="styles/large.css"> 
   <link href="https://fonts.googleapis.com/css?family=Muli|Vollkorn" rel="stylesheet">
+  <script src="js/jquery-2.2.1.min.js"></script> 
+  <!-- <script src="//code.jquery.com/jquery-2.2.1.min.js"></script> -->
+  
 </head>
 
 <body>
@@ -40,32 +43,56 @@
       <img src="images/shop-woman.jpg" alt="An employee helping a customer">
       <div class="about-shop">
         <h2>Friendly Service</h2>
-        <p>The staff is more like family and greets each person, new and old, as if they where a member of their family.</p>
+        <p>The staff is more like family and greets each person, new and old, as if they where a member of the family.</p>
       </div>
       <img src="images/shop-man.jpg" alt="An employee helping a customer">
     </section>
 
     <section class="button">
-      <button>
-        <img src="images/shop-specialized.jpg">
-        <a href="shop.html"></a>
-      </button>
-       <button>
-        <img src="images/shop-trek.jpg">
-        <a href="services.html"></a>
-      </button>
-       <button>
-        <img src="images/shop-giant.jpg">
-        <a href="brands.html"></a>
-      </button>
-      <button>
-        <img src="images/parts.jpg">
-        <a href="parts.html"></a>
-      </button>
+      <ul class="accordion">
+        <li class="subList"><button><img src="images/shop-specialized.jpg"></button>
+          <ul>
+            <li>Frame: FACT 10r<br>We use this frame because it has an exemplary blend between the value and performance.</li><br>
+            <li>Shift System: Shimano's Ultegra Di2<br>This system provides easy, smooth shifts.</li><br>
+            <li>Brakes: Hydraulic disc brakes<br>These brakes provides powerful stopping mechanism.</li><br>
+            <li>Wheels: Roval CL 50 Disc<br>This wheelset has traditional bearings and round spokes which in turn maintains it value at an all-time high.</li><br>
+            <li>Cost: $6,700</li>
+          </ul>
+        </li>
+
+        <li class="subList"><button><img src="images/shop-trek.jpg"></button>
+          <ul>
+            <li>Frame: 600 Series OCLV Carbon<br>This is a lightweight frame with Kammtail Virtual Foil aerodynamic tube shaping</li><br>
+            <li>Shift System: Shimano Ultegra Di2<br>This provides an electronid drivetrain which makes shifting clean and percise.</li><br>
+            <li>Brakes: Madone-specific<br>These brakes provide you with the control you need when stopping.</li><br>
+            <li>Wheels: Aeolus Pro 3 Carbon Wheels<br>These wheels creates a smooth and fast speed that will help you win the race.</li><br>
+            <li>Cost: $7499</li>
+          </ul>
+        </li>
+
+        <li class="subList"><button><img src="images/shop-giant.jpg"></button>
+          <ul>
+            <li>Frame: ALUXX SL-grade<br>This frame is made with aluminum technology.</li><br>
+            <li>Shift System: Shimano 105 11-speed<br>This systems makes shifting easy.</li><br>
+            <li>Brakes: Giant Conduct Hydraulic discs<br>These brakes make stopping easy for anyone.</li><br>
+            <li>Wheels: Giant PR-2 Disk Wheels<br>These wheels are have Giant Gavia AC 2 tubeless tires.</li><br>
+            <li>Cost: $1430</li>
+          </ul>
+        </li>
+
+        <li class="subList"><button><img src="images/shop-accessories.jpg"></button>
+          <ul>
+            <li>Helmets</li><br>
+            <li>Bells & Horns</li><br>
+            <li>Reflectors</li><br>
+            <li>Seats</li>
+          </ul>
+        </li>=
+      </ul>
     </section>
 
     <section class="tours">
-      <h2>Bikes and More</h2>
+      <h2 class="tours-h">Bikes and More</h2>
       <div>
         <h3>Mountain Bikes</h3>
         <p>We have a great selection of mountain bikes waiting to take you on an adventure you'll never forget.</p>        
@@ -88,6 +115,7 @@
       </div>
     </section>
       
+
     
   </main>
   <footer>
@@ -95,7 +123,8 @@
       <h4>The Mountain Spoke</h4>
       <p>555•555•5555<br>987 Main St<br> Bozeman, Mt 12345<br></p>
     
-    &copy;2018 | All Rights Reserved | Weather Date | (Link to citation pg)
-  </footer>  
+    <p>&copy;2018 | All Rights Reserved | Weather Date | <a href="works-cited.html">Works Cited</a></p>
+  </footer> 
+ <script src="scripts/accordion.js"></script>
 </body>
 </html>

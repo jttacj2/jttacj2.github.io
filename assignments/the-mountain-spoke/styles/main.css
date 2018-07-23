@@ -30,7 +30,7 @@ header, nav, footer {
 }
 
 main {
-	max-width: 75%;
+	max-width: 100%;
 }
 
 /*----------- HEADER --------------*/
@@ -82,7 +82,7 @@ main > * {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin-left: 3em;
+	margin: 2em 8em 8em;
 	padding: 2em 0 2em;
 }
 
@@ -104,33 +104,106 @@ main > * {
 
 }
 
+.about-tours {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 8em;
+}
+
+.about-tours h2 {
+	flex: 100%;
+}
+
+.about-tours-lake {
+	flex: 40%;
+	padding-right: 10%;
+}
+
+.about-tours-trail {
+	flex: 40%;
+}
+
+
 /*----------- MAIN/BUTTON --------------*/
 .button {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: center;
-	margin-left: 3em;
-	padding: 2em 0 2em;
+	justify-content: space-around;
+	padding: 4em 0 4em;
 	background-color: #E3E9EF;
+
+}
+.button-h {
+	flex: 100%;
+	margin: 0 8em 1em;
 }
 
 .button button:hover {
-	box-shadow: 5px 5px 10px gray;
+	box-shadow: 10px 10px 20px gray;
+}
+
+.button li:hover {
+	box-shadow: 10px 10px 20px gray;
+}
+
+.subList {
+	
+	list-style-type: none;
+}
+
+.subList ul {
+	display: none;
+	width: 300px;
 }
 
 /*----------- MAIN/TOURS --------------*/
 .tours {
 	display: flex;
-	flex-flow: column;
+	flex-flow: row wrap;
 	justify-content: center;
-	margin-left: 3em;
 	padding-top: 3em;
-
+	margin: 8em;
 }
 
 .tours-h {
 	flex: 100%;
 }
+
+.tours-p {
+	flex: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: -.5em;
+}
+
+.tours div {
+	flex: 15%;
+	padding-bottom: 4em;
+}
+
+.tours img {
+	align-self: flex-start;
+}
+
+/*----------- MAIN/FORM --------------*/
+.form {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	padding-top: 3em;
+	margin: 8em;
+}
+
+.form-f {
+	display: flex;
+	flex-flow: column nowrap;	
+}
+
+label {
+	padding: 1em 0 1em;
+}
+
+
 
 /*----------- FOOTER --------------*/
 footer {
@@ -139,7 +212,7 @@ footer {
 	align-items: center;
 	background-color: #5E9683;
 	border-top: .25em solid #D4453B;
-	padding-bottom: 2em;
+	padding: 2em;
 	font-size: 10px;
 }
 

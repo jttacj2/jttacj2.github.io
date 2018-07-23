@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke</title>
+  <meta name="description" content="Bicycle parts, repair, and tours in Bozeman, Montana">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css"> 
+  <link rel="stylesheet" href="styles/medium.css"> 
+  <link rel="stylesheet" href="styles/large.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Muli|Vollkorn" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <figure>
+      <img src="images/logo.png" srcset="images/logo1.png 1x, images/logo2.png 2x,images/logo3.png 3x" alt="logo bicycle tire and mountains">
+    </figure>
+    <h1>The Mountain Spoke</h1>    
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <figure class="main-img">
+      <img src="images/event-divide.jpg" alt="Blue skies reflected in a lake surrounded by grass with mountains in the background" sizes="100vw"
+           srcset="images/event-divide-350.jpg 350w, images/event-divide-800.jpg 800w, images/event-divide-1100.jpg 1100w">
+    </figure>
+
+    <section class="about">
+      <h2 class="about-h">Cycle the Continental Divide</h2>
+      <h3 class="about-h">Come and cycle the Continental Divide of Montana!</h3>
+      <p class="about-p">We will begin our journey in Roosville, MT ride for about thirteen hours before stopping to camp in Mt Wright. All camping gear will be provided for you. If you decide to bring your own please make sure that you use all light weight materials. We will then be finishing our trip in Helena the second day spending about another thirteen hours on the trail. Along the route we will be going through deep woods and steep mountains which are native to grizzly bears, elk, moose and mountain lions. Finally, Be prepared to experience thrilling trails and spectacular views!</p>
+      <img class="about-img" src="images/event-overlook.jpg" alt="A man pondering of the beauty of the mountains as he sits on his bike along the mountain trail">
+      
+    </section>
+    
+    <section class="button">
+     <h2 class="button-h">Information</h2>
+     <img src="images/event-route.jpg" alt="A map of the Continental Divide bike route">
+     <div>
+         <h3>Route: 380 miles</h3>
+            <ul>
+              <li>Start: Roosville, MT</li>
+              <li>End: Helena, MT</li>
+            </ul><br>
+          <h3>Basic Requirements:</h3>
+            <ul>
+              <li>Raingear and cold-weather clothing</li><br>
+              <li>Some back-country camping experience is prefered but not necessary</li><br>
+              <li>Food/Water</li><br>
+              <li>Bear repellent</li><br>
+              <li>Basic first aid kit</li><br>              
+            </ul>
+          <h3>Cost $899</h3>
+      </div>
+    </section>
+<section class="form">
+      <h2  class="tours-h">Cycle the Continental Divide Registration Form</h2>
+      <form method="get" action="thanks.html">
+        <fieldset class="form-f">
+      <legend>Your Information</legend>
+      <label>Full Name<input type="text" name="full_name" pattern="[a-z] {5}" placeholder="John Doe" required></label>
+      <label>Date of Birth<input type="date" name="bday"></label>
+      <label>Email<input type="email" name="email" placeholder="somebody@gmail.com"></label>
+      <label>Phone Number<input type="tel" name="phone_number" required></label>
+      <label>State or Country<input list="state_or_country" required>
+        <datalist id="state_or_country">         
+            <option value="Alabama">
+            <option value="Alaska">
+            <option value="Arizona">
+            <option value="Arkansas">
+            <option value="California">
+            <option value="China">
+            <option value="Colorado">
+            <option value="Connecticut">
+            <option value="Delaware">
+            <option value="District of Columbia">
+            <option value="Finland">
+            <option value="Florida">
+            <option value="France">
+            <option value="Georgia">
+            <option value="Germany">
+            <option value="Hawaii">
+            <option value="Idaho">
+            <option value="Illinois">
+            <option value="Indiana">
+            <option value="Iowa">
+            <option value="Italy">
+            <option value="Japan">
+            <option value="Kansas">
+            <option value="Kentucky">
+            <option value="Louisiana">
+            <option value="Maine">
+            <option value="Maryland">
+            <option value="Massachusetts">
+            <option value="Mexico">
+            <option value="Michigan">
+            <option value="Minnesota">
+            <option value="Mississippi">
+            <option value="Missouri">
+            <option value="Montana">
+            <option value="Nebraska">
+            <option value="Nevada">
+            <option value="New Hampshire">
+            <option value="New Jersey">
+            <option value="New Mexico">
+            <option value="New York">
+            <option value="North Carolina">
+            <option value="North Dakota">
+            <option value="Ohio">
+            <option value="Oklahoma">
+            <option value="Oregon">
+            <option value="Pennsylvania">
+            <option value="Rhode Island">
+            <option value="Russian Federation">
+            <option value="South Carolina">
+            <option value="South Dakota">
+            <option value="Switzerland">
+            <option value="Tennessee">
+            <option value="Texas">
+            <option value="Utah">
+            <option value="Vermont">
+            <option value="Virginia">
+            <option value="Washington">
+            <option value="West Virginia">
+            <option value="Wisconsin">
+            <option value="Wyoming">          
+        </datalist></label>
+     <div>Special Accommodations / Comments</div>
+      <textarea rows="6" cols="50"></textarea>
+      <input type="submit" value="Submit Your Registration">
+    </form>
+    </section>
+
+  </main>
+  <footer>
+    
+      <h4>The Mountain Spoke</h4>
+      <p>555•555•5555<br>987 Main St<br> Bozeman, Mt 12345<br></p>
+    
+    <p>&copy;2018 | All Rights Reserved | Weather Date | <a href="works-cited.html">Works Cited</a></p>
+
+  </footer>  
+</body>
+</html>

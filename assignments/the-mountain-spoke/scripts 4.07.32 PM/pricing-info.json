@@ -1,0 +1,7 @@
+{
+	"service":[{"name":"Bronze Tune-up", "cost":"$49.99", "includes": ["Brakes", "Hubs", "Headset", "Gears", "Bottom Bracket", "Derailleure"]}, 
+	{"name":"Silver Tune-up", "cost":"$99.99", "includes":["Tires & Tubes", "Chains", "Handlebar Tape", "Brake Shoes or Brake Pads", "Cables", "Spokes (max 5)"]}, 
+	{"name":"Gold Tune-up", "cost":"$149.99","includes":["Service Bottom Bracket", "Service Crankset", "Super Clean/Polish Frame", "Super Clean Wheels/Hubs", "Clean Drivetrain/Chain"]}]
+	
+}
+
