@@ -152,14 +152,28 @@ iframe {
 	box-shadow: 10px 10px 20px gray;
 }
 
+/*----------- MAIN/ACCORDION --------------*/
+.accordion {
+	
+	padding: 4em 0 4em;
+	background-color: #E3E9EF;
+	margin-bottom: 2em;
+
+}
+
 .subList {
 	
 	list-style-type: none;
 }
 
 .subList ul {
+	background-color: #FCEBE2;
 	display: none;
 	width: 300px;
+}
+
+li.openSesame {
+	left:0px;
 }
 
 /*----------- MAIN/TOURS --------------*/
