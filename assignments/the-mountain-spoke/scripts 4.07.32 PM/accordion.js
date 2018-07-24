@@ -1,13 +1,4 @@
-
-
 $('.accordion > li').hover(function(){
-			//This code executes when the mouse pointer is overe the list item
+			$(this).children("ul").slideToggle(200);
+		})
 
-			$(this).addClass('openSesame');
-
-		}, function(){
-			//This code executes when the mouse pointer leaves the list item
-
-			$(this).removeClass('openSesame');
-
-		});
