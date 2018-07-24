@@ -123,6 +123,11 @@ main > * {
 	flex: 40%;
 }
 
+iframe {
+	width: 600px;
+	height: 450px;
+}
+
 
 /*----------- MAIN/BUTTON --------------*/
 .button {
@@ -131,6 +136,7 @@ main > * {
 	justify-content: space-around;
 	padding: 4em 0 4em;
 	background-color: #E3E9EF;
+	margin-bottom: 2em;
 
 }
 .button-h {
@@ -138,7 +144,7 @@ main > * {
 	margin: 0 8em 1em;
 }
 
-.button button:hover {
+.button div:hover {
 	box-shadow: 10px 10px 20px gray;
 }
 
