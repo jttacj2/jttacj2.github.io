@@ -12,8 +12,21 @@
   <link rel="stylesheet" href="styles/large.css"> 
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
-  <script src="js/jquery-2.2.1.min.js"></script> 
+  <script src="scripts/jquery-2.2.1.min.js"></script> 
   <!-- <script src="//code.jquery.com/jquery-2.2.1.min.js"></script> -->
+  <script>
+    $(function(){
+      
+    $('#accordion > li').hover(function(){
+
+      $(this).addClass('openSesame');
+
+    }, function(){      
+
+      $(this).removeClass('openSesame');
+      })
+    })
+  </script>
   
 </head>
 
@@ -50,10 +63,10 @@
     </section>
 
     <section class="button">
-      <ul class="accordion">
-        <li class="subList"><button><img src="images/shop-specialized.jpg" alt="Man riding a Specialized brand bike"></button>
+      <ul id="accordion">
+        <li class="subList"><img src="images/shop-specialized.jpg" alt="Man riding a Specialized brand bike">
           <ul>
-            <li>Frame: FACT 10r<br>We use this frame because it has an exemplary blend between the value and performance.</li>
+            <li class="subList">Frame: FACT 10r<br>We use this frame because it has an exemplary blend between the value and performance.</li>
             <li>Shift System: Shimano's Ultegra Di2<br>This system provides easy, smooth shifts.</li>
             <li>Brakes: Hydraulic disc brakes<br>These brakes provides powerful stopping mechanism.</li>
             <li>Wheels: Roval CL 50 Disc<br>This wheelset has traditional bearings and round spokes which in turn maintains it value at an all-time high.</li>
@@ -61,7 +74,7 @@
           </ul>
         </li>
 
-        <li class="subList"><button><img src="images/shop-trek.jpg" alt="Close up of person riding a Trek brand bike"></button>
+        <li class="subList"><img src="images/shop-trek.jpg" alt="Close up of person riding a Trek brand bike">
           <ul>
             <li>Frame: 600 Series OCLV Carbon<br>This is a lightweight frame with Kammtail Virtual Foil aerodynamic tube shaping</li>
             <li>Shift System: Shimano Ultegra Di2<br>This provides an electronid drivetrain which makes shifting clean and percise.</li>
@@ -71,7 +84,7 @@
           </ul>
         </li>
 
-        <li class="subList"><button><img src="images/shop-giant.jpg" alt="Person riding a Giant brand bike"></button>
+        <li class="subList"><img src="images/shop-giant.jpg" alt="Person riding a Giant brand bike">
           <ul>
             <li>Frame: ALUXX SL-grade<br>This frame is made with aluminum technology.</li>
             <li>Shift System: Shimano 105 11-speed<br>This systems makes shifting easy.</li>
@@ -81,7 +94,7 @@
           </ul>
         </li>
 
-        <li class="subList"><button><img src="images/shop-accessories.jpg" alt="close up of handle bars of a bike with a bell on it"></button>
+        <li class="subList"><img src="images/shop-accessories.jpg" alt="close up of handle bars of a bike with a bell on it">
           <ul>
             <li>Helmets</li>
             <li>Bells & Horns</li>
